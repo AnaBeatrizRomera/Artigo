@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #c00;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .main-news, .side-news, .article {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .main-news h2, .side-news h3, .article h2 {
+            margin-top: 0;
+        }
+
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>News Portal</h1>
+    <p>The main news from Brazil and the world</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Politics</a>
+    <a href="#">Sports</a>
+    <a href="#">Economy</a>
+    <a href="#">Entertainment</a>
+    <a href="#">Technology</a>
+    <a href="#">Opinion</a>
+</nav>
+
+<div class="container">
+    <section class="main-news">
+        <h2>Headline: New Medical Breakthrough Offers Hope for Cancer Treatment</h2>
+<p><em>Published on May 2, 2025</em></p>
+<p>Scientists have made a significant breakthrough in cancer research, developing a new treatment that could revolutionize the way the disease is managed. The treatment has shown promising results in early trials and offers hope to millions of patients worldwide.</p>
+
+    </section>
+
+    <aside class="side-news">
+        <h3>Latest News</h3>
+        <ul>
+            <li><a href="#">Government announces new education program</a></li>
+            <li><a href="#">Championship final ends in thrilling penalty shootout</a></li>
+            <li><a href="#">Stock market hits new record high</a></li>
+            <li><a href="#">Oscar 2025: check out the big winners</a></li>
+        </ul>
+    </aside>
+</div>
+
+<div class="container">
+    <section class="article">
+        <h2>Opinion: Assistive Technology — Inclusion That Still Doesn't Reach Everyone</h2>
+        <p><em>By Bia, Gabi e Mili | Published on May 2, 2025</em></p>
+
+        <img src="https://www.oficinadanet.com.br/imagens/post/17558/tecassistiva.jpg" alt="Assistive technology">
+
+        <p>Assistive technology aims to promote autonomy and inclusion for people with disabilities through resources such as screen readers, motorized wheelchairs, and communication software. However, it still doesn't reach everyone.</p>
+
+        <p>Economic barriers make many of these devices unaffordable for a large part of the population. In addition, geographical inequality means that remote areas have less access to equipment and technical support. Even when the technology is available, the lack of training and accessible information makes its full use difficult. Finally, prejudice and low political priority for accessibility further deepen this exclusion.</p>
+
+        <p>Therefore, although assistive technology has inclusive potential, it alone doesn't guarantee digital inclusion. Public policies, training, support, and efforts to reduce inequality are needed to ensure its benefits reach everyone.</p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 News Portal. All rights reserved.
+</footer>
+
+</body>
+</html>
